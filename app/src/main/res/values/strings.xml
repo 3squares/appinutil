@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">App Inutil</string>
+    <string name="title_activity_presentation">PresentationActivity</string>
 </resources>

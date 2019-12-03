@@ -1,11 +1,11 @@
-package io.its3squares.appinutil
+package io.its3squares.appinutil.levels
 
 import android.app.Activity
 import android.content.Intent
 import android.graphics.Color
 import android.net.Uri
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import io.its3squares.appinutil.R
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.random.Random
 
@@ -17,6 +17,11 @@ class MainActivity : Activity() {
         setContentView(R.layout.activity_main)
 
         var count: Int = 0
+
+        btnHere.setOnClickListener{
+            val intent = Intent(this,Level2Activity::class.java)
+            startActivity(intent)
+        }
 
         btnHereFake.setOnClickListener {
             lblHello.setTextColor(Color.rgb(Random.nextInt(255), Random.nextInt(255), Random.nextInt(255)))
